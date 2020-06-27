@@ -157,11 +157,6 @@
             </span>
             
             
-            <span id="/2020/06/28/hello-world/" class="leancloud_visitors" data-flag-title="">
-                <b class="iconfont icon-read"></b> <i>阅读次数</i>
-                <span class="leancloud-visitors-count">1000000</span>
-            </span>
-            
         </p>
         
         
@@ -270,6 +265,13 @@
   }
 </script>
 
+
+
+    
+<link rel="stylesheet" href="//cdn.bootcss.com/gitalk/1.5.0/gitalk.min.css">
+
+    
+<script src="//cdn.bootcss.com/gitalk/1.5.0/gitalk.min.js"></script>
 
 
 
@@ -435,40 +437,6 @@
     }
 </script>
 
-
-    
-<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
-
-    <script>
-
-        var valine = new Valine();
-
-        function initValine(path) {
-            if (!path) path = window.location.pathname;
-            let language = 'zh-CN';
-            if (!language) {
-                language = 'en';
-            } else {
-                language = language.toLowerCase();
-            }
-            valine.init({
-                el: '#vcomments',
-                appId: 'QhRX6yGlumi90OY36HAlOvpJ-gzGzoHsz',
-                appKey: 'ILx2HCTS6RtbUJtrxCcB2xfc',
-                notify: 'false',
-                verify: 'false',
-                avatar: 'retro',
-                placeholder: 'Sup homie.',
-                visitor: 'true',
-                path: path,
-                lang: language
-            });
-        }
-
-        $(document).ready(function () {
-            initValine();
-        });
-    </script>
 
 
 

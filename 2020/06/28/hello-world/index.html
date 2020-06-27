@@ -110,11 +110,11 @@
                 </span>
                 
                 
-                <span id="/2020/06/28/hello-world/" class="leancloud_visitors" data-flag-title="Hello World">
-                    <b class="iconfont icon-read"></b> <i>阅读次数</i>
-                    <span class="leancloud-visitors-count">1000000</span>
-                </span>
                 
+                <span id="busuanzi_container_page_pv">
+                    <b class="iconfont icon-read"></b> <i>阅读次数</i>
+                    <span id="busuanzi_value_page_pv">0</span>
+                </span>
                 
             </p>
             
@@ -158,7 +158,18 @@
             
             
             
-            <div id="vcomments"></div>
+    <div id='gitalk-container' class="comment link"
+        data-ae='true'
+        data-ci='3a97d0493fa763093e96'
+        data-cs='05b73a859e7e4ee15984bee7d5162546231cff80'
+        data-r='blog-comments'
+        data-o='buxcon'
+        data-a='buxcon'
+        data-d=''
+    >留言</div>
+
+
+            
             
         </div>
         <div class="sidebar">
@@ -263,6 +274,13 @@
   }
 </script>
 
+
+
+    
+<link rel="stylesheet" href="//cdn.bootcss.com/gitalk/1.5.0/gitalk.min.css">
+
+    
+<script src="//cdn.bootcss.com/gitalk/1.5.0/gitalk.min.js"></script>
 
 
 
@@ -428,40 +446,6 @@
     }
 </script>
 
-
-    
-<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
-
-    <script>
-
-        var valine = new Valine();
-
-        function initValine(path) {
-            if (!path) path = window.location.pathname;
-            let language = 'zh-CN';
-            if (!language) {
-                language = 'en';
-            } else {
-                language = language.toLowerCase();
-            }
-            valine.init({
-                el: '#vcomments',
-                appId: 'QhRX6yGlumi90OY36HAlOvpJ-gzGzoHsz',
-                appKey: 'ILx2HCTS6RtbUJtrxCcB2xfc',
-                notify: 'false',
-                verify: 'false',
-                avatar: 'retro',
-                placeholder: 'Sup homie.',
-                visitor: 'true',
-                path: path,
-                lang: language
-            });
-        }
-
-        $(document).ready(function () {
-            initValine();
-        });
-    </script>
 
 
 
